@@ -6,13 +6,14 @@ public class Statistics
 {
     public static class Stats
     {
-        Float min, max, avg ;
-        public Stats( float min, float max, float avg )
-        {
-            this.min = min ;
-            this.max = max ;
-            this.avg = avg ;
-        }
+       Float average;
+       Float min;
+       Float max;
+       public Stats(float average, float min, float max) {
+		this.average=average;
+		this.min=min;
+		this.max=max;
+	}
     }
     
     public static Stats getStatistics(List<Float> numbers) 
@@ -28,8 +29,8 @@ public class Statistics
                 sum += n;     // adding each number to sum, at every loop 
             }
             
-        	avg = sum / (numbers.size());
-        	Stats s = new Stats(min, max, avg);
+        	average = sum / (numbers.size());
+        	Stats s = new Stats(average, min, max);
         	return s;
     	}
         return (new Stats(Float.NaN,Float.NaN,Float.NaN));
