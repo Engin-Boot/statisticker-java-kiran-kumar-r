@@ -6,11 +6,11 @@ public class Statistics
 {
     public static class Stats
     {
-       Float average;
+       Float avg;
        Float min;
        Float max;
-       public Stats(float average, float min, float max) {
-		this.average=average;
+       public Stats(float avg, float min, float max) {
+		this.avg=avg;
 		this.min=min;
 		this.max=max;
 	}
@@ -19,7 +19,7 @@ public class Statistics
     public static Stats getStatistics(List<Float> numbers) 
     {
         if( !numbers.isEmpty() ){   // checking for empty list
-    		float average=0;
+    		float avg=0;
         	float min=Collections.min(numbers);
         	float max=Collections.max(numbers);
 		
@@ -29,7 +29,7 @@ public class Statistics
                 sum += n;     // adding each number to sum, at every loop 
             }
             
-        	average = sum / (numbers.size());
+        	avg = sum / (numbers.size());
         	Stats s = new Stats(average, min, max);
         	return s;
     	}
