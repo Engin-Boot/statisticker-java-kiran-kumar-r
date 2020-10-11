@@ -30,7 +30,7 @@ public class Statistics
             }
             
         	avg = sum / (numbers.size());
-        	Stats s = new Stats(average, min, max);
+        	Stats s = new Stats(avg, min, max);
         	return s;
     	}
         return (new Stats(Float.NaN,Float.NaN,Float.NaN));
