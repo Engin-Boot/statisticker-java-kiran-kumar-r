@@ -19,12 +19,12 @@ public class Statistics
     public static Stats getStatistics(List<Float> numbers) 
     {
         if( !numbers.isEmpty() ){   // checking for empty list
-    		float avg=0;
+    		float average=0;
         	float min=Collections.min(numbers);
         	float max=Collections.max(numbers);
 		
             Float sum = 0f;     // initializing sum to 0
-        	for (Float n : numbers)     // looping through all numbers
+            for (Float n : numbers)     // looping through all numbers
             {
                 sum += n;     // adding each number to sum, at every loop 
             }
