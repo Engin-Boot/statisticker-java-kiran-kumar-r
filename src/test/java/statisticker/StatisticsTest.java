@@ -20,7 +20,7 @@ public class StatisticsTest
         Statistics.Stats s = Statistics.getStatistics(numberList);
 
         float epsilon = 0.001f;
-        assertEquals(s.average, 4.525f, epsilon);
+        assertEquals(s.avg, 4.525f, epsilon);
         assertEquals(s.min, 1.5f, epsilon);
         assertEquals(s.max, 8.9f, epsilon);
     }
@@ -31,7 +31,7 @@ public class StatisticsTest
 
         Statistics.Stats s = Statistics.getStatistics(emptyList);
         
-        assertEquals(s.average.isNaN(),true);
+        assertEquals(s.avg.isNaN(),true);
         assertEquals(s.min.isNaN(),true);
         assertEquals(s.max.isNaN(),true);
 
