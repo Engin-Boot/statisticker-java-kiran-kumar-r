@@ -25,7 +25,7 @@ public class Statistics
             Float sum = 0f;     // initializing sum to 0
         	for (Float n : numbers)     // looping through all numbers
             {
-                sum + = n;     // adding each number to sum, at every loop 
+                sum += n;     // adding each number to sum, at every loop 
             }
             
         	avg = sum / (numbers.size());
